@@ -3,6 +3,10 @@
   <groupId>Calculadora</groupId>
   <artifactId>Calculadora</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  <properties>
+  	 <!-- The main class to start by executing "java -jar" -->
+      <start-class>test.TestVentana</start-class>
+  </properties>
   <build>
     <sourceDirectory>src</sourceDirectory>
     <plugins>
