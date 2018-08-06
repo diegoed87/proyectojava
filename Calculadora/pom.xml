@@ -8,7 +8,6 @@
       <start-class>test.TestVentana</start-class>
   </properties>
   <build>
-    <sourceDirectory>src</sourceDirectory>
     <plugins>
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
