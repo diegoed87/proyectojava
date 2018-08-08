@@ -6,6 +6,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 import javax.swing.BorderFactory;
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JMenu;
@@ -39,7 +40,7 @@ public class Ventana extends JFrame implements ActionListener{
 		setSize(270,350);
 		setLocationRelativeTo(null);
 		setLayout(new GridLayout(1, 1));
-		
+		setIconImage(new ImageIcon(getClass().getResource("/images/icono.png")).getImage());
 		addWindowListener(new java.awt.event.WindowAdapter() {
 			public void windowClosing(java.awt.event.WindowEvent evt) {
 				close();
@@ -49,6 +50,7 @@ public class Ventana extends JFrame implements ActionListener{
 		barra = new JMenuBar();
 		menuArchivo = new JMenu("Archivo");
 		itemSalir = new JMenuItem("Salir");
+		itemSalir.setIcon(new ImageIcon(getClass().getResource("/images/Close.png")));
 		itemSalir.addActionListener(this);
 		
 		menuArchivo.add(itemSalir);
